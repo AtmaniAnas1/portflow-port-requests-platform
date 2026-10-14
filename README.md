@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚓ PortFlow
+# PortFlow
 
 ### Plateforme web de gestion et de traitement des demandes portuaires
 
@@ -17,23 +17,23 @@
 
 ---
 
-## 📋 Table des matières
+## Table des matières
 
-- [Contexte](#-contexte)
-- [Fonctionnalités](#-fonctionnalités)
-- [Architecture](#-architecture)
-- [Stack technique](#-stack-technique)
-- [Structure du projet](#-structure-du-projet)
-- [Installation et lancement](#-installation-et-lancement)
-- [API REST](#-api-rest)
-- [Modèle de données](#-modèle-de-données)
-- [Sécurité](#-sécurité)
-- [Pistes d'amélioration](#-pistes-damélioration)
-- [Auteur](#-auteur)
+- [Contexte](#contexte)
+- [Fonctionnalités](#fonctionnalités)
+- [Architecture](#architecture)
+- [Stack technique](#stack-technique)
+- [Structure du projet](#structure-du-projet)
+- [Installation et lancement](#installation-et-lancement)
+- [API REST](#api-rest)
+- [Modèle de données](#modèle-de-données)
+- [Sécurité](#sécurité)
+- [Pistes d'amélioration](#pistes-damélioration)
+- [Auteur](#auteur)
 
 ---
 
-## 🎯 Contexte
+## Contexte
 
 **PORTNET S.A.** opère le *Guichet Unique National des Procédures du Commerce Extérieur* au Maroc, qui dématérialise les échanges entre les acteurs de la communauté portuaire (opérateurs, transitaires, douane, autorités portuaires…).
 
@@ -43,27 +43,27 @@ Dans le cadre de mon **stage de 4ᵉ année à l'EMSI (École Marocaine des Scie
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
-### 👤 Espace Opérateur (`USER`)
+### Espace Opérateur (`USER`)
 - Inscription et connexion sécurisée
 - Création de demandes portuaires (description, port de départ, port d'arrivée)
 - Suivi de l'état de ses demandes : `EN_ATTENTE`, `ACCEPTEE`, `REFUSEE`
 - Réception de notifications lors du traitement d'une demande
 
-### 🛃 Espace Douane (`DOUANE`)
+### Espace Douane (`DOUANE`)
 - Consultation de l'ensemble des demandes soumises
 - Acceptation ou refus d'une demande avec commentaire
 - Horodatage du traitement et notification automatique du demandeur
 
-### 🛠️ Espace Administrateur (`ADMIN`)
+### Espace Administrateur (`ADMIN`)
 - Gestion des comptes : liste, activation, suspension, suppression
 - Création de comptes agents de douane
 - Vue globale sur toutes les demandes de la plateforme
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌──────────────────────┐        HTTP / JSON         ┌──────────────────────────────────┐
@@ -85,7 +85,7 @@ Architecture en couches classique : **Controller → Service → Repository → 
 
 ---
 
-## 🧰 Stack technique
+## Stack technique
 
 | Couche | Technologies |
 |---|---|
@@ -97,7 +97,7 @@ Architecture en couches classique : **Controller → Service → Repository → 
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 portflow/
@@ -121,7 +121,7 @@ portflow/
 
 ---
 
-## 🚀 Installation et lancement
+## Installation et lancement
 
 ### Prérequis
 - **Java 17+**
@@ -154,7 +154,7 @@ L'interface est accessible sur **http://localhost:5173**.
 
 ---
 
-## 🔌 API REST
+## API REST
 
 ### Authentification — public
 | Méthode | Endpoint | Description |
@@ -205,7 +205,7 @@ curl -X POST http://localhost:8080/api/user/demande \
 
 ---
 
-## 🗃️ Modèle de données
+## Modèle de données
 
 ```
 ┌──────────────┐ 1      * ┌──────────────────────┐
@@ -233,7 +233,7 @@ curl -X POST http://localhost:8080/api/user/demande \
 
 ---
 
-## 🔐 Sécurité
+## Sécurité
 
 - **Authentification stateless** par JSON Web Token (validité 24 h)
 - **Hachage des mots de passe** avec BCrypt
@@ -244,7 +244,7 @@ curl -X POST http://localhost:8080/api/user/demande \
 
 ---
 
-## 🧭 Pistes d'amélioration
+## Pistes d'amélioration
 
 - [ ] Externaliser la clé secrète JWT (variables d'environnement)
 - [ ] Migration vers PostgreSQL / MySQL pour la production
@@ -255,7 +255,7 @@ curl -X POST http://localhost:8080/api/user/demande \
 
 ---
 
-## 👨‍💻 Auteur
+## Auteur
 
 <table>
   <tr>
@@ -274,5 +274,5 @@ Projet réalisé dans le cadre du **stage de 4ᵉ année** à l'**EMSI** au sein
 ---
 
 <div align="center">
-<sub>⚓ PortFlow — Digitaliser le traitement des demandes portuaires</sub>
+<sub>PortFlow — Digitaliser le traitement des demandes portuaires</sub>
 </div>
