@@ -4,7 +4,7 @@
 
 ### Plateforme web de gestion et de traitement des demandes portuaires
 
-*Projet de stage de 4ᵉ année — EMSI × PORTNET S.A. (Casablanca)*
+*Projet de stage de 3ᵉ année — EMSI × PORTNET S.A. (Casablanca)*
 
 ![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
@@ -37,7 +37,7 @@
 
 **PORTNET S.A.** opère le *Guichet Unique National des Procédures du Commerce Extérieur* au Maroc, qui dématérialise les échanges entre les acteurs de la communauté portuaire (opérateurs, transitaires, douane, autorités portuaires…).
 
-Dans le cadre de mon **stage de 4ᵉ année à l'EMSI (École Marocaine des Sciences de l'Ingénieur)** au sein de PORTNET à Casablanca, j'ai conçu et développé **PortFlow**, une application web full-stack qui digitalise le cycle de vie d'une demande portuaire :
+Dans le cadre de mon **stage de 3ᵉ année à l'EMSI (École Marocaine des Sciences de l'Ingénieur)** au sein de PORTNET à Casablanca, j'ai conçu et développé **PortFlow**, une application web full-stack qui digitalise le cycle de vie d'une demande portuaire :
 
 > **Soumission** par l'opérateur ➜ **Traitement** (acceptation / refus) par la douane ➜ **Notification** automatique de l'opérateur ➜ **Supervision** globale par l'administrateur.
 
@@ -269,7 +269,7 @@ curl -X POST http://localhost:8080/api/user/demande \
   </tr>
 </table>
 
-Projet réalisé dans le cadre du **stage de 4ᵉ année** à l'**EMSI** au sein de **PORTNET S.A.**, Casablanca.
+Projet réalisé dans le cadre du **stage de 3ᵉ année** à l'**EMSI** au sein de **PORTNET S.A.**, Casablanca.
 
 ---
 
